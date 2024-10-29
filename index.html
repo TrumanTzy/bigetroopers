@@ -3,46 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTR Esports</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bigetron Esport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            background: url('https://bigetron.gg/media/thumbnails/E59XnMp6aUKPBRwtbB3thz_size_1920x1080_webp.webp') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            margin: 10px 0;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #666;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            transition: transform 0.3s;
+            background-color: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-wrapper {
+            margin: 10px;
+            text-align: center;
+        }
+        .image-wrapper img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #666;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #777;
+        }
+        .read-more {
+            cursor: pointer;
+            color: #666;
+        }
+        .read-more:hover {
+            color: #777;
+        }
+        .team-leader {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .team-leader img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>BTR Esports</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About BTR Esports</h2>
-        <p>BTR Esports is a leading esports organization known for its competitive teams and innovative approach to gaming. We strive to provide our players with the best environment to succeed.</p>
-    </section>
-    
-    <section id="team">
-        <h2>Our Team</h2>
-        <p>Meet our talented players:</p>
+
+    <div class="header">
+        <div class="header-content">
+         <img alt="Bigetron Esport Logo" height="100" src="https://bigetron.gg/static/images/BigetronLogo.svg" width="100"/>
+         <h1>
+          Bigetron Esport
+         </h1>
+         <p>
+          Programmed To Win!
+         </p>
+         <p>
+          By Marga Tzy
+         </p>
+        </div>
+       </div>
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#programs">Programs</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <div class="team-leader">
+        <img alt="Team Leader Stefano Max Truman Simanjuntak" height="100" src="https://drive.google.com/file/d/1ilvuQoHbQR_b-sKurMXA9u77RlfCo7v4/view?usp=sharing" width="100"/>
+        <p>
+         Team Leader: Stefano Max Truman Simanjuntak
+        </p>
+       </div>
+      </div>
+
+    <section id="programs" class="card">
+        <h2>Programs</h2>
+        <p>We offer a variety of programs to help you achieve your goals. Our programs are designed to provide you with the skills and knowledge you need to succeed in your chosen field.</p>
         <ul>
-            <li>Player 1</li>
-            <li>Player 2</li>
-            <li>Player 3</li>
+            <li>Manajemen Logistik: Learn the skills you need to succeed in the logistics industry.</li>
+            <li>Rekayasa Perangkat Lunak: Develop the skills you need to design and develop software.</li>
+            <li>Teknologi Komputer Jaringan: Learn how to design and implement computer networks.</li>
         </ul>
     </section>
-    
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <p>Stay tuned for our next matches and tournaments!</p>
-    </section>
-    
-    <footer>
-        <h2>Contact Us</h2>
-        <p>Email: contact@btr-esports.com</p>
-    </footer>
-</body>
-</html>
 
+    <section id="events" class="card">
+        <h2>Events</h2>
+        <p>Stay up to date with our latest events and activities. From open houses to workshops, we have something for everyone.</p>
+        <p>Openhouse - On November</p>
+    </section>
+
+    <section id="gallery" class="card">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <h3>Manajemen Logistik Gallery:</h3>
+                <p>-Empty-</p>
+            </div>
+            <div class="image-wrapper">
+                <h3>TKJ Gallery:</h3>
+                <p>-Empty-</p>
+            </div>
+            <div class="image-wrapper">
+                <h2>RPL Gallery</h2>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image02.jpg?v=889298f8" alt="Image 02 " loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image03.jpg?v=889298f8" alt="Image 03" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image04.jpg?v=889298f8" alt="Image 04" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image06.jpg?v=889298f8" alt="Image 06" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image07.jpg?v=889298f8" alt="Image 07" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image09.jpg?v=889298f8" alt="Image 09" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+ </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Get in touch with us! We'd love to hear from you. Whether you have a question, comment, or just want to say hi, we're here to listen.</p>
+        <p>Email: <a href="mailto:">[Your Email]</a></p>
+        <p>Call us: <a href="tel:">[Your Phone Number]</a></p>
+        <p>Our Adress: Kompleks DDN No 68 Curug, Jl. Raya Kalimalang, Pondok Kelapa, Duren Sawit, Jakarta Timur 13450</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Bigetron Esport</p>
+</footer>
+
+<script>
+    function showMore() {
+        var text = document.getElementById("about-text-hidden");
+        var readMore = document.getElementById("read-more");
+        if (text.style.display === "none") {
+            text.style.display = "block";
+            readMore.textContent = "Read Less";
+        } else {
+            text.style.display = "none";
+            readMore.textContent = "Read More";
+        }
+    }
+</script>
+
+</body>
+</html>*
